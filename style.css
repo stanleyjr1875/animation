@@ -1,0 +1,97 @@
+body {
+    background-color: #4da6ff;
+}
+
+.container {
+    margin: 0;
+    margin-top: 0;    
+    padding: 0;
+    width: 700px;
+    height: 50px;
+    text-align: center;
+    justify-content: center;
+    color: white;    
+    font-size: 50px;
+    font-weight: bold;
+    position: relative;
+    animation: mymove both;
+    animation-duration: 5s;
+    
+}
+
+#div3 {    
+    font-size: 100px;
+    color: #99ff99;
+}
+
+.logo {
+    animation: logo 5s both reverse;
+    /* position: relative; */
+}
+
+.fade-in {
+    animation: fadeIn 5s;
+    float: right;
+    margin-right: 20px;
+    font-size: 20px;
+}
+
+/* #div1 {animation-timing-function: ease-in-out;}
+#div2 {animation-timing-function: ease;}
+#div3 {animation-timing-function: ease-in;}
+#div4 {animation-timing-function: ease-in-out;}
+#div5 {animation-timing-function: ease-in-out;}
+#div6 {animation-timing-function: ease-in-out;} */
+
+.message2 {
+    margin: 0;
+    padding: 0;
+    width: 50%;
+    text-indent: 0;
+    font-size: 50px;
+    animation: mymove2 5s both reverse;
+    color: white;
+    position: relative;
+    /* background-color: blue; */
+}
+
+.message3 {
+    font-size: 30px;
+    color: white;
+    margin-top: 10px;
+    animation: fadeIn 10s;
+}
+
+.female {
+    animation: fadeIn 10s;
+}
+
+@keyframes mymove {
+    from {left: 0px;}
+    to {left: 300px;}
+}
+
+@keyframes mymove2 {
+    from {left: 0px;}
+    to {left: 300px;}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes messages3 {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes female {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes logo {
+    from {transform:translateX(0);}
+    to {transform:translateX(100%);}
+}
