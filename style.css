@@ -3,95 +3,95 @@ body {
 }
 
 .container {
-    margin: 0;
-    margin-top: 0;    
-    padding: 0;
-    width: 700px;
-    height: 50px;
-    text-align: center;
-    justify-content: center;
-    color: white;    
-    font-size: 50px;
-    font-weight: bold;
-    position: relative;
-    animation: mymove both;
-    animation-duration: 5s;
-    
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
 }
 
-#div3 {    
-    font-size: 100px;
-    color: #99ff99;
-}
-
-.logo {
-    animation: logo 5s both reverse;
-    /* position: relative; */
-}
-
-.fade-in {
-    animation: fadeIn 5s;
-    float: right;
-    margin-right: 20px;
-    font-size: 20px;
-}
-
-/* #div1 {animation-timing-function: ease-in-out;}
-#div2 {animation-timing-function: ease;}
-#div3 {animation-timing-function: ease-in;}
-#div4 {animation-timing-function: ease-in-out;}
-#div5 {animation-timing-function: ease-in-out;}
-#div6 {animation-timing-function: ease-in-out;} */
-
-.message2 {
-    margin: 0;
-    padding: 0;
-    width: 50%;
-    text-indent: 0;
-    font-size: 50px;
-    animation: mymove2 5s both reverse;
-    color: white;
-    position: relative;
-    /* background-color: blue; */
-}
-
-.message3 {
-    font-size: 30px;
-    color: white;
-    margin-top: 10px;
-    animation: fadeIn 10s;
+img {
+    position: absolute;
 }
 
 .female {
-    animation: fadeIn 10s;
+    transform: translate(350px, 100px);    
+    width: 500px;
+    height: 400px;       
+} 
+
+.fade {
+    opacity: 0;  
+    transition: opacity 3s; 
 }
 
-@keyframes mymove {
-    from {left: 0px;}
-    to {left: 300px;}
+.show {
+    opacity: 1;
+    transition: opacity 3s;
 }
 
-@keyframes mymove2 {
-    from {left: 0px;}
-    to {left: 300px;}
+
+.headline1 {
+    width: 700px;
+    height: 300px;    
+    transform: translate(-750px, 400px);
 }
 
-@keyframes fadeIn {
-    from {opacity: 0;}
-    to {opacity: 1;}
+.slide-in {
+    transform: translate(100px, 400px);
+    transition: transform 2s;
 }
 
-@keyframes messages3 {
-    from {opacity: 0;}
-    to {opacity: 1;}
+.slide-in2 {
+    transform: translate(750px, 15px)!important;
+    transition: transform 2s !important;
 }
 
-@keyframes female {
-    from {opacity: 0;}
-    to {opacity: 1;}
+.slide-out {
+    transform: translate(-750px, 400px);
+    transition: transform 2s;
 }
 
-@keyframes logo {
-    from {transform:translateX(0);}
-    to {transform:translateX(100%);}
+.headline2 {
+    transform: translate(1500px, 100px);
+    width: 600px;
+    height: auto;  
 }
+
+.slide-rightin { 
+    transform: translate(100px, 100px);
+    transition: transform 2s;
+    animation-direction: reverse;
+}
+
+.subheadline {
+    transform: translate(700px, 250px);    
+    width: 500px;
+    height: auto;       
+} 
+
+.learnmore {
+    transform: translate(700px, 570px);   
+    width: 250px;
+    height: auto;
+}
+
+.logo {
+    transform: translate(-210px, 20px);   
+    width: 200px;
+    height: auto;
+    
+}
+
+.replay {
+    transform: translate(700px, 647px);   
+    width: 100px;
+    height: auto;
+}
+
+
+
+
+
+
+
+
+
